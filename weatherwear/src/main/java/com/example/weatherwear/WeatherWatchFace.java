@@ -267,7 +267,7 @@ public class WeatherWatchFace extends CanvasWatchFaceService {
             updateTimer();
         }
 
-      
+
 
         @Override
         public void onDraw(Canvas canvas, Rect bounds) {
@@ -284,7 +284,7 @@ public class WeatherWatchFace extends CanvasWatchFaceService {
             long now = System.currentTimeMillis();
             mCalendar.setTimeInMillis(now);
             Date dateNow = mCalendar.getTime();
-            DateFormat dataFormat = new SimpleDateFormat("EEE, MMM d YYYY", Locale.ENGLISH);
+            DateFormat dataFormat = new SimpleDateFormat("EEE, MMM d yyyy", Locale.ENGLISH);
 
             String text = mAmbient
                     ? String.format("%d:%02d", mCalendar.get(Calendar.HOUR),
